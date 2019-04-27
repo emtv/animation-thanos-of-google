@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+}
+
+
+/******************************************************************************************
+** CONTENT SEARCH, LOGO AND MENU USER
+******************************************************************************************/
+header>.search{
+    display: flex;
+    padding: 25px 25px 0 25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/*LOGO*/
+header>.search>.box-logo{
+    width: 100px;
+    margin-right: 40px;
+}
+
+header>.search>.box-logo>img{
+    width: 100%;
+}
+
+/*SEARCH*/
+header>.search>.box-search{
+    display: flex;
+    align-items: center;
+}
+
+header>.search>.box-search>.content-search{
+    border: 1px solid #dfe1e5;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 0 10px;
+    align-items: center;
+}
+
+header>.search>.box-search>.content-search>input{
+    width: 500px;
+    padding: 13px;
+    font-size: 1.1em;
+    border: none;
+}
+
+header>.search>.box-search>.content-search>input:focus{
+    outline: none;
+}
+
+header>.search>.box-search>.content-search>img{
+    height: 25px;
+    cursor: pointer;
+}
+
+header>.search>.box-search>.content-search>.mic{
+    margin-right: 15px;
+}
+
+/* CONTENT MENU USER*/
+header>.search>.content-menu-user{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header>.search>.content-menu-user>.align{
+    display: flex;
+    align-items: center;
+}
+
+header>.search>.content-menu-user>.align>img{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header>.search>.content-menu-user>.align>div{
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header>.search>.content-menu-user>.align>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/******************************************************************************************
+** MENU NAVIGATOR
+******************************************************************************************/
+header>.nav{
+    width: 100%;
+    border-bottom: .5px solid rgba(0,0,0,.1);
+}
+
+header>.nav>ul{
+    display: flex;
+    padding-left: 167px;
+    padding-top: 10px;
+}
+
+header>.nav>ul>li{
+    list-style: none;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    color: #777;
+    cursor: pointer;
+}
+
+header>.nav>ul>li:hover{
+    color: #000;
+}
+
+header>.nav>ul>.menu-active{
+    font-weight: bold;
+    border-bottom: 3px solid #1A73E8;
+    color: #1A73E8;
+}
