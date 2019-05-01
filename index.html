@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" co ntent="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thanos - Buscar con Google</title>
-    <link rel="shortcut icon" type="image/png" href="/images/ico.png"/>
+    <link rel="shortcut icon" type="image/png" href="/images/ico.png" />
     <link rel="stylesheet" href="/css/app.css">
 </head>
 
@@ -18,14 +18,14 @@
             </div>
             <div class="box-search">
                 <div class="content-search">
-                    <input type="text">
+                    <input type="text" value="Thanos">
                     <img src="/images/googlemic_color_24dp.png" class="mic" alt="mic">
-                    <img src="/images/search.jpg" alt="search">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
                 </div>
             </div>
             <div class="content-menu-user">
                 <div class="align">
-                    <img src="/images/select.jpg" alt="">
+                    <span></span>
                     <div class="box-img-user">
                         <img src="/images/perfil.jpg" alt="">
                     </div>
@@ -47,12 +47,12 @@
     </header>
     <main>
         <div class="max-width">
-            <div class="header-main">
-                <p>Cerca de <span>123,000,000</span> resultados (<span>0.37</span> segundos)</p>
+            <div class="header-main" id="headerMain">
+                <p>Cerca de <span id="cantSearch"></span> resultados (<span id="seconds"></span> segundos)</p>
             </div>
             <div class="content-main">
                 <div class="column-1">
-                    <div class="news">
+                    <div class="news animation-transition">
                         <div class="title">
                             <h2>Noticias destacadas</h2>
                         </div>
@@ -77,24 +77,22 @@
                                     </div>
                                     <div class="news-box">
                                         <div class="box-img">
-                                            <img src="/images/thanos-1.jpg" alt="">
+                                            <img src="/images/thanos-2.jpg" alt="">
                                         </div>
                                         <div class="description">
-                                            <h4>Thano, el villano de Avengers, llegó al buscador de Google y ycon su
-                                                guante mágico</h4>
-                                            <span class="link">Infobae</span>
-                                            <span class="hours">hace 9 horas</span>
+                                            <h4>Explicación a la paradoja de Thanos en Vengadores: Endgame</h4>
+                                            <span class="link">CulturaOcio</span>
+                                            <span class="hours">hace 3 días </span>
                                         </div>
                                     </div>
                                     <div class="news-box">
                                         <div class="box-img">
-                                            <img src="/images/thanos-1.jpg" alt="">
+                                            <img src="/images/thanos-3.jpg" alt="">
                                         </div>
                                         <div class="description">
-                                            <h4>Thano, el villano de Avengers, llegó al buscador de Google y ycon su
-                                                guante mágico</h4>
-                                            <span class="link">Infobae</span>
-                                            <span class="hours">hace 9 horas</span>
+                                            <h4>Revelan versión extendida de la última batalla contra...</h4>
+                                            <span class="link">Laura G</span>
+                                            <span class="hours">hace 15 horas</span>
                                         </div>
                                     </div>
                                 </div>
@@ -115,11 +113,11 @@
                         <span>Más sobre thanos</span>
                     </div>
                     <div class="content-data">
-                        <div class="item">
+                        <div class="item animation-transition">
                             <h4>Thanos - Wikipedia, la enciclopedia libre</h4>
                             <div class="link">
-                                <span>https://es.wikipedia.org/Thanos</span>
-                                <img src="/images/row-dowm.jpg" alt="">
+                                <span>https://es.wikipedia.org/Thanos<span class="arrow"></span></span>
+                                
                             </div>
                             <p><b>Thanos</b> es un supervillano ficticio que aparece en los cómics norteamericanos
                                 publicados
@@ -155,46 +153,46 @@
                                 <a>Drax el Destructor</a>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item animation-transition">
                             <h4>'Vengadores: Endgame': ¿Quién ha matado a Thanos en los cómics y ...</h4>
                             <div class="link">
-                                <span>https://www.esquire.com/es/actualidad/cine/.../quien-mata-thanos-vengadores-4/</span>
-                                <img src="/images/row-dowm.jpg" alt="">
+                                <span>https://www.esquire.com/es/actualidad/cine/.../quien-mata-thanos-vengadores-4/<span class="arrow"></span></span>
+                                
                             </div>
                             <p>Cómo muere <b>Thanos?</b> ¿Quién tiene más motivos para acabar con el Titán Loco?</p>
                         </div>
-                        <div class="item">
+                        <div class="item animation-transition">
                             <h4>El guante de Thanos está inspirado en una santa: la Arquidiócesis de ...</h4>
                             <div class="link">
-                                <span>https://www.infobae.com/.../el-guante-de-thanos-esta-inspirado-en-una-santa-la-arquid...</span>
-                                <img src="/images/row-dowm.jpg" alt="">
+                                <span>https://www.infobae.com/.../el-guante-de-thanos-esta-inspirado-en-una-santa-la-arquid...<span class="arrow"></span></span>
+                                
                             </div>
                             <p>hace 7 horas - Tanto así que incluso la iglesia católica compartió un video en redes
                                 sociales en donde diferenció el guantelete del titán <b>Thanos</b> con una ...</p>
                         </div>
-                        <div class="item">
+                        <div class="item animation-transition">
                             <h4>Historia de Thanos en Marvel - Smash Mexico</h4>
                             <div class="link">
-                                <span>https://www.smashmexico.com.mx/marvelc/historia-de-thanos-en-marvel/</span>
-                                <img src="/images/row-dowm.jpg" alt="">
+                                <span>https://www.smashmexico.com.mx/marvelc/historia-de-thanos-en-marvel/<span class="arrow"></span></span>
+                                
                             </div>
                             <p>Más de una vez, <b>Thanos</b> tomó a un niño de una especie galáctica que había diezmado
                                 para criarlos como propios. Algunos de estos niños han sido tutelados ...</p>
                         </div>
-                        <div class="item">
+                        <div class="item animation-transition">
                             <h4>Thanos | Marvel Cinematic Universe Wiki | FANDOM powered by Wikia</h4>
                             <div class="link">
-                                <span>https://marvelcinematicuniverse.fandom.com/es/wiki/Thanos</span>
-                                <img src="/images/row-dowm.jpg" alt="">
+                                <span>https://marvelcinematicuniverse.fandom.com/es/wiki/Thanos<span class="arrow"></span></span>
+                                
                             </div>
                             <p><b>Thanos</b>, también conocido como Señor Oscuro por sus más fieles subordinados y
                                 apodado como Titán Loco por las comunidades galácticas, fue un señor de la ...</p>
                         </div>
-                        <div class="item">
+                        <div class="item animation-transition">
                             <h4>Google y su tributo a Thanos | CNN</h4>
                             <div class="link">
-                                <span>https://cnnespanol.cnn.com/.../estados-unidos-advanteger-thanos-google-truco-perspecti...</span>
-                                <img src="/images/row-dowm.jpg" alt="">
+                                <span>https://cnnespanol.cnn.com/.../estados-unidos-advanteger-thanos-google-truco-perspecti...<span class="arrow"></span></span>
+                                
                             </div>
                             <div class="video">
                                 <div class="box-img-video">
@@ -208,38 +206,247 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item animation-transition">
                             <h4>¿Cómo?: Según la iglesia de México, el guantelete de Thanos está ...</h4>
                             <div class="link">
-                                <span>https://www.fayerwayer.com/2019/04/iglesia-thanos-guantelete/</span>
-                                <img src="/images/row-dowm.jpg" alt="">
+                                <span>https://www.fayerwayer.com/2019/04/iglesia-thanos-guantelete/<span class="arrow"></span></span>
+                                
                             </div>
-                            <p>hace 10 horas - Suena a broma decir que el guantelete de <b>Thanos</b> es una reliquia católica, aunque en realidad sí se parece. Esto es lo que dice la iglesia ...</p>
+                            <p>hace 10 horas - Suena a broma decir que el guantelete de <b>Thanos</b> es una reliquia
+                                católica, aunque en realidad sí se parece. Esto es lo que dice la iglesia ...</p>
                         </div>
-                        <div class="item">
+                        <div class="item animation-transition">
                             <h4>¡Conoce al poderoso y terrible Thanos, el Titán Loco ...</h4>
                             <div class="link">
-                                <span>https://www.superaficionados.com › Cómics</span>
-                                <img src="/images/row-dowm.jpg" alt="">
+                                <span>https://www.superaficionados.com › Cómics<span class="arrow"></span></span>
+                                
                             </div>
-                            <p>Tras Avengers: Infinity War s (2018) y con la próxima Avengers: Endgame (2019) a la vuelta de la esquina, <b>Thanos</b> está en boca de todo el mundo por ser el...</p>
+                            <p>Tras Avengers: Infinity War s (2018) y con la próxima Avengers: Endgame (2019) a la
+                                vuelta de la esquina, <b>Thanos</b> está en boca de todo el mundo por ser el...</p>
                         </div>
-                        <div class="item">
+                        <div class="item animation-transition">
                             <h4>¿Es católico el guante de Thanos? - El Universal</h4>
                             <div class="link">
-                                <span>https://www.eluniversal.com.mx/nacion/es-catolico-el-guante-de-thanos</span>
-                                <img src="/images/row-dowm.jpg" alt="">
+                                <span>https://www.eluniversal.com.mx/nacion/es-catolico-el-guante-de-thanos<span class="arrow"></span></span>
+                                
                             </div>
-                            <p>hace 2 horas - Tras el estreno de “Avengers: Endgame”, la Arquidiócesis de Monterrey se preguntó si el guante de <b>Thanos</b> es católico, por lo que se dio a la ...</p>
+                            <p>hace 2 horas - Tras el estreno de “Avengers: Endgame”, la Arquidiócesis de Monterrey se
+                                preguntó si el guante de <b>Thanos</b> es católico, por lo que se dio a la ...</p>
                         </div>
+                    </div>
+                    <div class="related-questions animation-transition">
+                        <div>
+                            <div class="title border-bottom">Preguntas relacionadas</div>
+                            <div class="question border-bottom">
+                                <span>¿Dónde vive Thanos?</span>
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                </svg>
+                            </div>
+                            <div class="question border-bottom">
+                                <span>¿Cuántas Gemas del Infinito hay y quién las tiene?</span>
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                </svg>
+                            </div>
+                            <div class="question border-bottom">
+                                <span>¿Cuál es la raza de Thanos?</span>
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                </svg>
+                            </div>
+                            <div class="question">
+                                <span>¿Cómo se llama la película donde aparece Thanos?</span>
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text">Comentarios</div>
+                    </div>
+                    <div class="related-search animation-transition">
+                        <div class="title">Búsquedas relacionadas con thanos</div>
+                        <div class="body">
+                            <ul>
+                                <div>
+                                    <li><a>thanos <b>muerte</b></a></li>
+                                    <li><a>hanos <b>actor</b></a></li>
+                                </div>
+                                <div>
+                                    <li><a>thanos <b>poderes</b></a></li>
+                                    <li><a>thanos <b>juguete</b></a></li>
+                                </div>
+                                <div>
+                                    <li><a>thanos <b>meme</b></a></li>
+                                    <li><a><b>quien mata a</b> thanos <b>en infinity war</b></a></li>
+                                </div>
+                                <div>
+                                    <li><a>thanos <b>capitana marvel</b></a></li>
+                                    <li><a>thanos <b>guante</b></a></li>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="img-pagination g"></span>
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o-red"></span>
+                                        <span class="act-pag">1</span>
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o"></span>
+                                        2
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o"></span>
+                                        3
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o"></span>
+                                        4
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o"></span>
+                                        5
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o"></span>
+                                        6
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o"></span>
+                                        7
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o"></span>
+                                        8
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o"></span>
+                                        9
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination o"></span>
+                                        10
+                                    </td>
+                                    <td>
+                                        <span class="img-pagination gle"></span>
+                                        <span class="right">Siguiente</span>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
-                <div class="column-2"></div>
+                <div class="column-2">
+                    <div class="box">
+                        <div class="title">
+                            <div class="name">
+                                <h2>Thanos</h2>
+                                <span>Personaje ficticio</span>
+                            </div>
+                            <div class="btn">
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="gauntlet" id="gauntlet">
+                                <img src="/images/thanos_idle.png">
+                            </div>
+                            <div class="img-t">
+                                <img src="/images/thanos-4.jpg">
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Thanos es un supervillano ficticio que aparece en los cómics norteamericanos publicados
+                                por Marvel Comics. Creado por el escritor y artista Jim Starlin el personaje apareció
+                                por primera vez en The Invincible Iron Man # 55. <a>Wikipedia</a></p>
+                            <div class="section">
+                                <span><b>Interpretado por:</b> Josh Brolin</span>
+                                <span><b> Nombre original:</b> Thanos The Titan, Dione</span>
+                                <span><b>Estatura:</b> 2,20 m (7 ft 3 in)</span>
+                                <span><b>Primera aparición:</b> Iron Man Vol. 1, #55 (febrero de 1973)</span>
+                                <span><b>Alias:</b> Titán loco</span>
+                            </div>
+                        </div>
+                        <div class="film">
+                            <h2>Películas</h2>
+                            <div class="content">
+                                <div class="f">
+                                    <div class="box-img">
+                                        <img src="/images/Avengers-Endgame.jpg">
+                                    </div>
+                                    <a>Avengers: Endgame</a>
+                                    <span>2019</span>
+                                </div>
+                                <div class="f">
+                                    <div class="box-img">
+                                        <img src="/images/Avengers-Infinity-War.jpg">
+                                    </div>
+                                    <a>Avengers: Infinity War</a>
+                                    <span>2018</span>
+                                </div>
+                                <div class="f">
+                                    <div class="box-img">
+                                        <img src="/images/Guardianes-de-la-galaxia.jpg">
+                                    </div>
+                                    <a>Guardianes de la galaxia</a>
+                                    <span>2014</span>
+                                </div>
+                                <div class="f">
+                                    <div class="box-img">
+                                        <img src="/images/Avengers-era-de-Ultrón.jpg">
+                                    </div>
+                                    <a>Avengers: era de Ultrón</a>
+                                    <span>2015</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tsearch">
+                            <div class="title">
+                                <h4>También se buscó</h4>
+                                <span>Ver 15 más</span>
+                            </div>
+                            <div class="content">
+                                <div class="box-img">
+                                    <img src="/images/Iroman.jpg" alt="">
+                                    <span>Iron Man</span>
+                                </div>
+                                <div class="box-img">
+                                    <img src="/images/Thor.jpg" alt="">
+                                    <span>Thor</span>
+                                </div>
+                                <div class="box-img">
+                                    <img src="/images/Hullk.jpg" alt="">
+                                    <span>Bruce Banner</span>
+                                </div>
+                                <div class="box-img">
+                                    <img src="/images/Captain-Americas.jpg" alt="">
+                                    <span>Capitán América</span>
+                                </div>
+                                <div class="box-img">
+                                    <img src="/images/Spider-Man.jpg" alt="">
+                                    <span>Spider‑Man</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <script src="/js/html2canvas.min.js"></script>
+    <script src="/js/app..js"></script>
 </body>
 
 </html>
